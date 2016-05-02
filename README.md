@@ -12,9 +12,9 @@ Quickly build arbitrary size Hadoop Cluster, Spark Cluster, Hive based on Docker
 
 ##1. Project Introduction
 
-The objective of this project is to help Hadoop developer to quickly build an arbitrary size Hadoop cluster on their local host. This is achieved by using [Docker](https://www.docker.com/).
+The objective of this project is to help Hadoop, Spark, Hive developer to quickly build an arbitrary size cluster on their local host. This is achieved by using [Docker](https://www.docker.com/).
 
-My project is based on [kiwenlau/hadoop-cluster-docker]https://github.com/kiwenlau/hadoop-cluster-docker project, however, I've added Spark and Hive and changed the base os from Ubuntu-15.04 to CentOS-6.
+My project is based on [kiwenlau/hadoop-cluster-docker](https://github.com/kiwenlau/hadoop-cluster-docker) project, however, I've added Spark and Hive and changed the base os from Ubuntu-15.04 to CentOS-6.
 
 
 ##2. BDP-Cluster-Docker image Introduction
