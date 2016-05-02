@@ -19,6 +19,7 @@ sudo docker run -d -t --dns 127.0.0.1 -P --name master -h master.bdp.com -w /roo
 FIRST_IP=$(docker inspect --format="{{.NetworkSettings.IPAddress}}" master)
 
 # init hive-mysql
+echo "start hive-mysql container..."
 sudo docker rm -f hive-mysql &> /dev/null
 sudo docker run -d -t --dns 127.0.0.1 -P --name hive-mysql -h mysql.bdp.com -w /root -e JOIN_IP=$FIRST_IP joewoo/hive-mysql:1.0 &> /dev/null
 
