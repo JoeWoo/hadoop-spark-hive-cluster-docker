@@ -78,6 +78,25 @@ a large repo... this could take a while
 ```
 git clone https://github.com/JoeWoo/hadoop-spark-hive-cluster-docker
 ```
+download hadoop, spark, hive bin files:
+```
+cd hadoop-spark-hive-cluster-docker/hadoop-base/files
+
+curl -Lso hadoop-2.6.4.tar.gz http://ftp.tsukuba.wide.ad.jp/software/apache/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz
+tar -zxvf hadoop-2.6.4.tar.gz
+rm hadoop-2.6.4.tar.gz
+
+curl -Lso spark-1.5.2-bin-hadoop2.6.tgz http://mirror.cogentco.com/pub/apache/spark/spark-1.5.2/spark-1.5.2-bin-hadoop2.6.tgz
+tar -zxvf  spark-1.5.2-bin-hadoop2.6.tgz
+rm spark-1.5.2-bin-hadoop2.6.tgz
+
+curl -Lso apache-hive-1.2.1-bin.tar.gz http://mirror.tcpdiag.net/apache/hive/hive-1.2.1/apache-hive-1.2.1-bin.tar.gz
+tar -zxvf apache-hive-1.2.1-bin.tar.gz
+rm apache-hive-1.2.1-bin.tar.gz
+
+
+```
+
 #####b. build images
 ```
  cd hadoop-spark-hive-cluster-docker

@@ -17,6 +17,7 @@ ADD files/scala-2.10.4 /usr/local/scala-2.10.4
 ADD files/spark-1.5.2-bin-hadoop2.6 /usr/local/spark-1.5.2
 ADD files/mysql-connector-java-5.1.6.jar /usr/local/mysql-connector-java-5.1.6.jar
 ADD files/apache-hive-1.2.1-bin /usr/local/hive-1.2.1
+ADD files/hive-hwi-1.2.1.war /usr/local/hive-hwi-1.2.1.war
 
 # set jave environment variable
 ENV JAVA_HOME /usr/lib/jvm/jre-1.7.0-openjdk.x86_64
@@ -53,6 +54,7 @@ RUN ln -s /usr/local/hive-1.2.1 /usr/local/hive
 ENV HIVE_HOME /usr/local/hive
 ENV PATH $PATH:$HIVE_HOME/bin
 RUN mv /usr/local/hive-env.sh /usr/local/hive/conf/hive-env.sh
+RUN mv /usr/local/hive-hwi-1.2.1.war /user/local/hive/lib/hive-hwi-1.2.1.war
 # install mysql-java-connecter for hive
 RUN ln -s /usr/local/mysql-connector-java-5.1.6.jar /usr/local/hive/lib/mysql-connector-java-5.1.6.jar
 
