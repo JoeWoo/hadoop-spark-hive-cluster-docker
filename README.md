@@ -21,11 +21,11 @@ My project is based on [kiwenlau/hadoop-cluster-docker]https://github.com/kiwenl
 BDP is short for Big Data Platform
 In this project, I developed 5 docker images: **serf-dnsmasq**, **hive-mysql**, **hadoop-base**, **hadoop-master** and **hadoop-slave**.
 
-##### 1. serf-dnsmasq
+#####1. serf-dnsmasq
 
 Based on [centos:6](https://hub.docker.com/_/centos/). [serf](https://www.serfdom.io/) and [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) are installed for providing DNS service for the Hadoop Cluster.
 
-##### 2. hive-mysql
+#####2. hive-mysql
 For hive metastore.
 Based on serf-dnsmasq.
 Installed:
@@ -35,7 +35,7 @@ openssh-client
 vim
 mysql
 ```
-##### 2. hadoop-base
+#####3. hadoop-base
 
 Based on serf-dnsmasq.
 installed:
@@ -50,7 +50,7 @@ Apache Hive 1.2.1
 Apache Spark 1.5.2
 ```
 
-#####3. hadoop-master
+#####4. hadoop-master
 
 Based on hadoop-base.
 Runs :
@@ -62,7 +62,7 @@ Hive HWI
 Hive hiveserver2
 ```
 
-#####hadoop-slave
+#####5.hadoop-slave
 
 Based on hadoop-base.
 Runs:
