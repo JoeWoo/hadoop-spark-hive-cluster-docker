@@ -131,7 +131,7 @@ tce
 > A)bout I)nstall O)nDemand D)epends T)ree F)iles siZ)e L)ist S)earch P)rovides K)eywords or Q)uit: I
 > exit
 ```  
-- In China, to speeding up `pull centos:6 docker`  by some docker hub mirrors like :[daoCloud](https://dashboard.daocloud.io/mirror). Sometimes, `yum install` also not works so well, just try one more time.
+- In China, to speeding up `pull centos:6 docker`  by some docker hub mirrors like :[daoCloud](https://dashboard.daocloud.io/mirror). Sometimes, `yum install` also not works well, just try one more time.
 
 #####d. run container
 ```
@@ -236,7 +236,7 @@ Hello    2
 ####i. run spark example
 ```
 spark-shell
->val file=sc.textFile("hdfs://master.bdp.com:9000/user/root/input/README.txt")  
+>val file=sc.textFile("hdfs://master.bdp.com:9000/user/root/input/file2.txt")  
 >val count=file.flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_+_)  
 >count.collect
 ```
