@@ -1,4 +1,4 @@
-# Creates a base ubuntu image with serf and dnsmasq
+# Creates a base centos image with serf and dnsmasq
 FROM centos:6
 
 MAINTAINER JoeWoo <0wujian0@gmail.com>
